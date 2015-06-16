@@ -1,0 +1,9 @@
+{
+  "name": "eslint-config-volox",
+  "version": "1.0.0",
+  "description": "ESLint configutation",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Volox <voloxxx@gmail.com>",
+  "license": "MIT"
+}
