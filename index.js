@@ -103,7 +103,7 @@ module.exports = {
     "no-sync": 0,
 
     // ES6
-    "generator-star-spacing": [ 2, "start" ],
+    "generator-star-spacing": [ 2, "after" ],
 
     // Style
     "indent": [ 2, 2 ],
