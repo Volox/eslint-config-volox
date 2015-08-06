@@ -26,7 +26,7 @@ module.exports = {
     "no-debugger": 0,
     "no-dupe-keys": 2,
     "no-empty": 2,
-    "no-empty-class": 2,
+    "no-empty-character-class": 2,
     "no-ex-assign": 2,
     "no-extra-boolean-cast": 2,
     "no-extra-parens": 0,
@@ -103,7 +103,7 @@ module.exports = {
     "no-sync": 0,
 
     // ES6
-    "generator-star": [ 2, "start" ],
+    "generator-star-spacing": [ 2, "start" ],
 
     // Style
     "indent": [ 2, 2 ],

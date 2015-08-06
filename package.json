@@ -1,8 +1,12 @@
 {
   "name": "eslint-config-volox",
   "version": "1.0.0",
-  "description": "ESLint configutation",
+  "description": "ESLint configuration",
   "main": "index.js",
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
   "scripts": {},
   "author": "Volox <voloxxx@gmail.com>",
   "license": "MIT"
