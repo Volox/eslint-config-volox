@@ -1,22 +1,13 @@
 module.exports = {
-  // ES6
-  "ecmaFeatures": {
-    "binaryLiterals": true,
-    "blockBindings": true,
-    "classes": true,
-    "forOf": true,
-    "generators": true,
-    "objectLiteralComputedProperties": true,
-    "objectLiteralDuplicateProperties": true,
-    "objectLiteralShorthandMethods": true,
-    "objectLiteralShorthandProperties": true,
-    "octalLiterals": true,
-    "regexUFlag": true,
-    "regexYFlag": true,
-    "superInFunctions": true,
-    "templateStrings": true,
-    "unicodeCodePointEscapes": true,
-    "globalReturn": true
+  "extends": "eslint:recommended",
+  // Environment
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  
+  "parseOptions": {
+    "ecmaVersion": 6
   },
 
   // Rules
@@ -106,40 +97,19 @@ module.exports = {
     "generator-star-spacing": [ 2, "after" ],
 
     // Style
-    "indent": [ 2, 2 ],
-    "brace-style": [ 2, "1tbs", { "allowSingleLine": true } ],
-    "camelcase": 2,
+    "indent": [ "error", 2 ],
+    "brace-style": [ "error", "1tbs", { "allowSingleLine": true } ],
+    "camelcase": "error",
     "comma-spacing": 0,
     "comma-style": 0,
     "eol-last": 0,
-    "quotes": [ 2, "single" ],
+    "quotes": [ "error", "single" ],
     "space-unary-ops": [ 1, { "words": true, "nonwords": false } ],
     "comma-dangle": 0,
     "space-infix-ops": 0,
-    // "": ,
-    // "": ,
-    // "": ,
-    // "": ,
-    // "": ,
-    // "": ,
-    // "": ,
-    // "": ,
-    // "": ,
-    // "": ,
 
     // Doc
     "valid-jsdoc": 1
   },
-
-  // Global vars
-  "env": {
-    "node": true
-  },
-
-  // Global vars
-  "globals": {
-  },
-
-  // Plugins
 };
 
