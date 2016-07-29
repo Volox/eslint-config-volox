@@ -1,115 +1,45 @@
 module.exports = {
-  "extends": "eslint:recommended",
+  extends: 'eslint:recommended',
+
   // Environment
-  "env": {
-    "node": true,
-    "es6": true
-  },
-  
-  "parseOptions": {
-    "ecmaVersion": 6
+  env: {
+    'shared-node-browser': true,
+    es6: true,
   },
 
-  // Rules
-  "rules": {
-    // Errors
-    "no-cond-assign": 2,
-    "no-debugger": 0,
-    "no-dupe-keys": 2,
-    "no-empty": 2,
-    "no-empty-character-class": 2,
-    "no-ex-assign": 2,
-    "no-extra-boolean-cast": 2,
-    "no-extra-parens": 0,
-    "no-extra-semi": 2,
-    "no-invalid-regexp": 2,
-    "no-irregular-whitespace": 2,
-    "no-obj-calls": 2,
-    "no-reserved-keys": 0,
-    "no-sparse-arrays": 1,
-    "no-unreachable": 1,
-    "use-isnan": 2,
-    "valid-typeof": 2,
-
-    // Best practice
-    "complexity": 0,
-    "consistent-return": 1,
-    "curly": [2, "multi-line"],
-    "default-case": 2,
-    "dot-notation": 0,
-    "eqeqeq": 2,
-    "guard-for-in": 1,
-    "no-alert": 2,
-    "no-caller": 2,
-    "no-div-regex": 2,
-    "no-else-return": 0,
-    "no-eval": 2,
-    "no-extend-native": 2,
-    "no-extra-bind": 2,
-    "no-fallthrough": 2,
-    "no-floating-decimal": 2,
-    "no-implied-eval": 2,
-    "no-labels": 2,
-    "no-loop-func": 1,
-    "no-multi-spaces": 2,
-    "no-multi-str": 2,
-    "no-native-reassign": 2,
-    "no-new": 2,
-    "no-new-func": 2,
-    "no-new-wrappers": 2,
-    "no-octal": 2,
-    "no-octal-escape": 2,
-    "no-redeclare": 2,
-    "no-return-assign": 2,
-    "no-self-compare": 2,
-    "no-sequences": 2,
-    "no-throw-literal": 2,
-    "no-unused-expressions": 2,
-    "no-void": 2,
-    "no-with": 2,
-    "radix": 2,
-    "vars-on-top": 0,
-    "wrap-iife": [2, "inside"],
-    "yoda": 2,
-
-    // Strict mode
-    "strict": [ 2, "global" ],
-
-    // Variables
-    "no-catch-shadow": 2,
-    "no-delete-var": 2,
-    "no-label-var": 2,
-    "no-shadow": 2,
-    "no-shadow-restricted-names": 2,
-    "no-undef": 2,
-    "no-undef-init": 1,
-    "no-unused-vars": 2,
-    "no-use-before-define": 2,
-
-    // Node
-    "handle-callback-err": 2,
-    "no-new-require": 2,
-    "no-path-concat": 2,
-    "no-process-exit": 0,
-    "no-sync": 0,
-
-    // ES6
-    "generator-star-spacing": [ 2, "after" ],
-
-    // Style
-    "indent": [ "error", 2 ],
-    "brace-style": [ "error", "1tbs", { "allowSingleLine": true } ],
-    "camelcase": "error",
-    "comma-spacing": 0,
-    "comma-style": 0,
-    "eol-last": 0,
-    "quotes": [ "error", "single" ],
-    "space-unary-ops": [ 1, { "words": true, "nonwords": false } ],
-    "comma-dangle": 0,
-    "space-infix-ops": 0,
-
-    // Doc
-    "valid-jsdoc": 1
+  parseOptions: {
+    ecmaVersion: 6,
   },
+
+  rules: {
+    'space-infix-ops': [ 'error', { 'int32Hint': false } ],
+    'no-irregular-whitespace': 'error',
+    'space-in-parens': [ 'yield-star-spacing', 'after' ],
+    'rest-spread-spacing': 'error',
+    'prefer-const': 'error',
+    'generator-star-spacing': [ 'error', { 'before': false, 'after': true } ],
+    'arrow-spacing': [ 'error', { 'before': true, 'after': true } ],
+    'space-in-parens': ['error', 'always' ],
+    'space-before-function-paren': [ 'error', 'never' ],
+    'space-before-blocks': 'error',
+    'quotes': [ 'error', 'single' ],
+    'object-curly-spacing': [ 'error', 'always' ],
+    'object-curly-newline': [ 'error', { minProperties: 2 } ],
+    'no-spaced-func': 'error',
+    'key-spacing': [ 'error', { 'overrides': { 'if': { 'after': false }, 'for': { 'after': false }, 'while': { 'after': false } } } ],
+    'indent': [ 'keyword-spacing', 2 ],
+    'key-spacing': [ 'error', { 'mode': 'minimum' } ],
+    'indent': [ 'error', 2 ],
+    'computed-property-spacing': [ 'error', 'always' ],
+    'comma-spacing': [ 'error', { 'before': false, 'after': true } ],
+    'block-spacing': [ 'error', 'always' ],
+    'array-bracket-spacing': [ 'error', 'always' ],
+    'no-multi-spaces': 'error',
+    'semi-spacing': 'error',
+    'semi': [ 'error', 'always' ],
+    'no-extra-semi': 'error',
+    'complexity': [ 'error', 2 ],
+    'comma-dangle': [ 'error', 'always-multiline' ],
+  }
 };
 

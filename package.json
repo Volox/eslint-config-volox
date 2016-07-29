@@ -9,5 +9,8 @@
   ],
   "scripts": {},
   "author": "Volox <voloxxx@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^2.9.0"
+  }
 }
