@@ -24,7 +24,7 @@ module.exports = {
     'space-before-blocks': 'error',
     'quotes': [ 'error', 'single' ],
     'object-curly-spacing': [ 'error', 'always' ],
-    'object-curly-newline': [ 'error', { minProperties: 2 } ],
+    'object-curly-newline': [ 'error', { multiline: true } ],
     'no-spaced-func': 'error',
     'key-spacing': [ 'error', { 'overrides': { 'if': { 'after': false }, 'for': { 'after': false }, 'while': { 'after': false } } } ],
     'indent': [ 'keyword-spacing', 2 ],
@@ -38,8 +38,8 @@ module.exports = {
     'semi-spacing': 'error',
     'semi': [ 'error', 'always' ],
     'no-extra-semi': 'error',
-    'complexity': [ 'error', 2 ],
-    'comma-dangle': [ 'error', 'always-multiline' ],
+    'complexity': [ 'error', 5 ],
+    'comma-dangle': [ 'warn', 'always-multiline' ],
   }
 };
 
